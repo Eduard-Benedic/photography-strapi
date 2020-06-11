@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "logos",
+  "info": {
+    "name": "logo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "GoodProductPhotography": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

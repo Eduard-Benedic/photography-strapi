@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photo_displays",
+  "info": {
+    "name": "PhotoDisplay"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "photoTextGrid": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable-components.photo-display-component",
+      "required": true
+    },
+    "photo_display_category": {
+      "via": "photo_displays",
+      "model": "photo-display-category"
+    },
+    "galleryMasonry": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "title"
+    }
+  }
+}

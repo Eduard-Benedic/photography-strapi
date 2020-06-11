@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_reusable_components_text_triads",
+  "info": {
+    "name": "textTriad",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

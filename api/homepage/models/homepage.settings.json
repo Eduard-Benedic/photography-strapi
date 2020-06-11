@@ -1,0 +1,67 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "name": "Homepage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "homeBanner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "bannerText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable-components.text-triad"
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable-components.text-over-image",
+      "max": 4,
+      "min": 4
+    },
+    "parallaxImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "parallaxText": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 400
+    },
+    "underBannerText": {
+      "type": "text",
+      "required": true
+    },
+    "overlapImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "overlapText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable-components.text-triad",
+      "required": true
+    }
+  }
+}

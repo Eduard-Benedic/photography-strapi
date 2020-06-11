@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_reusable_components_blog_heads",
+  "info": {
+    "name": "blogHead",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "blogReadingTime": {
+      "type": "string",
+      "required": false
+    },
+    "blogTitle": {
+      "type": "string"
+    },
+    "blogMainImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "blogAuthor": {
+      "type": "string",
+      "required": true
+    },
+    "blogAuthorImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
