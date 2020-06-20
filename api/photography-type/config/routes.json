@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/photography-types",
+      "handler": "photography-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/photography-types/count",
+      "handler": "photography-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/photography-types/:id",
+      "handler": "photography-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/photography-types",
+      "handler": "photography-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/photography-types/:id",
+      "handler": "photography-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/photography-types/:id",
+      "handler": "photography-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photography_type_subtypes",
+  "info": {
+    "name": "PhotographyTypeSubtype"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "photography_type": {
+      "model": "photography-type"
+    },
+    "photography_subtype": {
+      "model": "photography-subtype"
+    },
+    "productCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable-components.product-blueprint",
+      "required": true
+    }
+  }
+}

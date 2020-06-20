@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_reusable_components_product_blueprints",
+  "info": {
+    "name": "productBlueprint",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "productCategory": {
+      "type": "enumeration",
+      "enum": [
+        "simpleItem",
+        "detailedItem",
+        "FootwearAndBags",
+        "Underwear",
+        "Accessories"
+      ],
+      "required": true
+    },
+    "productImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "productExample": {
+      "type": "text"
+    },
+    "priceStripeIdentifier": {
+      "type": "enumeration",
+      "enum": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "xxl"
+      ],
+      "required": true
+    }
+  }
+}

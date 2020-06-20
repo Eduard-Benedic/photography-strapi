@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/photography-subtypes",
+      "handler": "photography-subtype.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/photography-subtypes/count",
+      "handler": "photography-subtype.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/photography-subtypes/:id",
+      "handler": "photography-subtype.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/photography-subtypes",
+      "handler": "photography-subtype.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/photography-subtypes/:id",
+      "handler": "photography-subtype.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/photography-subtypes/:id",
+      "handler": "photography-subtype.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
