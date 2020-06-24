@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_reusable_components_stripe_strapi_identifiers",
+  "info": {
+    "name": "StripeStrapiIdentifier",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "stripeStrapiImageIdentifier": {
+      "type": "enumeration",
+      "enum": [
+        "simple",
+        "detailed",
+        "footwear",
+        "accessories"
+      ],
+      "required": true
+    },
+    "imageProduct": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

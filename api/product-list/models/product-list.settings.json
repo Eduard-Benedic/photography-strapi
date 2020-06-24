@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_lists",
+  "info": {
+    "name": "ProductList"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "typeStripeIdentifier": {
+      "type": "enumeration",
+      "enum": [
+        "fashionAndBeauty",
+        "ecommerce"
+      ],
+      "required": true
+    },
+    "subtypeStripeIdentifier": {
+      "type": "enumeration",
+      "enum": [
+        "onMannequin",
+        "onModel",
+        "packshot"
+      ],
+      "required": true
+    },
+    "productImage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable-components.stripe-strapi-identifier",
+      "required": true,
+      "min": 4,
+      "max": 4
+    }
+  }
+}
