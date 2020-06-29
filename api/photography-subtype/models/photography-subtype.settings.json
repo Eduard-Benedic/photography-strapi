@@ -25,6 +25,20 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "slugSubtype": {
+      "type": "enumeration",
+      "enum": [
+        "whiteBackground",
+        "ghostMannequin",
+        "flat",
+        "packshot",
+        "lifestyle",
+        "facebook",
+        "instagram",
+        "artistic"
+      ],
+      "required": true
     }
   }
 }

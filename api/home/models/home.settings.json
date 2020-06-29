@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Home"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "HomeBanner": {
+      "type": "component",
+      "repeatable": false,
+      "required": true,
+      "component": "unique.home-banner"
+    },
+    "CTAPresentationSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable-components.ctap-resentation",
+      "min": 5,
+      "max": 5,
+      "required": true
+    },
+    "CTAPresentationFullBackground": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable-components.ctap-resentation",
+      "required": true
+    }
+  }
+}

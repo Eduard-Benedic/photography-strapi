@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_reusable_components_additional_shots",
+  "info": {
+    "name": "AdditionalShot",
+    "icon": "arrow-up"
+  },
+  "options": {},
+  "attributes": {
+    "angle": {
+      "type": "enumeration",
+      "enum": [
+        "front",
+        "side",
+        "back",
+        "detail"
+      ],
+      "required": true
+    },
+    "angleImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

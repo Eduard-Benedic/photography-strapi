@@ -28,6 +28,15 @@
     },
     "photography_subtypes": {
       "collection": "photography-subtype"
+    },
+    "slugOption": {
+      "type": "enumeration",
+      "enum": [
+        "fashionAndBeauty",
+        "ecommerce",
+        "socialMedia"
+      ],
+      "required": true
     }
   }
 }

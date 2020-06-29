@@ -13,16 +13,20 @@
       "type": "enumeration",
       "enum": [
         "fashionAndBeauty",
-        "ecommerce"
+        "ecommerce",
+        "socialMedia"
       ],
       "required": true
     },
     "subtypeStripeIdentifier": {
       "type": "enumeration",
       "enum": [
-        "onMannequin",
+        "ghostMannequin",
         "onModel",
-        "packshot"
+        "packshot",
+        "lifestyle",
+        "whiteBackground",
+        "flat"
       ],
       "required": true
     },
@@ -33,6 +37,12 @@
       "required": true,
       "min": 4,
       "max": 4
+    },
+    "additionalShot": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable-components.additional-shot",
+      "required": true
     }
   }
 }
