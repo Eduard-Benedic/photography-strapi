@@ -19,14 +19,19 @@
       "type": "component",
       "repeatable": true,
       "component": "reusable-components.ctap-resentation",
-      "min": 5,
-      "max": 5,
       "required": true
     },
     "CTAPresentationFullBackground": {
       "type": "component",
       "repeatable": false,
       "component": "reusable-components.ctap-resentation",
+      "required": true
+    },
+    "OrderJourney": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable-components.image-text-triad",
+      "min": 3,
       "required": true
     }
   }
