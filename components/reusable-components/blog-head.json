@@ -6,10 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "blogReadingTime": {
-      "type": "string",
-      "required": false
-    },
     "blogTitle": {
       "type": "string"
     },
