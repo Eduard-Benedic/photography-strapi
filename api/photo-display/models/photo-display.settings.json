@@ -19,8 +19,8 @@
       "required": true
     },
     "photo_display_category": {
-      "via": "photo_displays",
-      "model": "photo-display-category"
+      "model": "photo-display-category",
+      "via": "photo_displays"
     },
     "galleryMasonry": {
       "collection": "file",
@@ -35,6 +35,12 @@
       "type": "uid",
       "required": true,
       "targetField": "title"
+    },
+    "SEOTags": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable-components.seot-ags",
+      "required": true
     }
   }
 }

@@ -13,8 +13,8 @@
       "type": "string"
     },
     "photo_displays": {
-      "collection": "photo-display",
-      "via": "photo_display_category"
+      "via": "photo_display_category",
+      "collection": "photo-display"
     },
     "slug": {
       "type": "string",

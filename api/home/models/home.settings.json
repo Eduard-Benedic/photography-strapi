@@ -27,6 +27,12 @@
       "component": "reusable-components.image-text-triad",
       "min": 3,
       "required": true
+    },
+    "SEOTags": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable-components.seot-ags",
+      "required": true
     }
   }
 }
