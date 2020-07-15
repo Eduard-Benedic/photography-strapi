@@ -25,6 +25,11 @@
     "description": {
       "type": "richtext",
       "required": false
+    },
+    "OrderJourneyInner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable-components.image-text-double-link"
     }
   }
 }
