@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "faqs",
+  "info": {
+    "name": "FAQ"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "pagetitle": {
+      "type": "string",
+      "required": true
+    },
+    "faqSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable-components.title-text",
+      "min": 1
+    }
+  }
+}

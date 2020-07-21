@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_reusable_components_title_texts",
+  "info": {
+    "name": "TitleText",
+    "icon": "angle-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
