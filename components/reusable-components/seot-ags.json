@@ -11,6 +11,10 @@
     },
     "metadescription": {
       "type": "string"
+    },
+    "ldJson": {
+      "type": "json",
+      "required": false
     }
   }
 }

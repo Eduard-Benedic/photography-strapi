@@ -20,6 +20,11 @@
     "blogSummary": {
       "type": "text",
       "maxLength": 180
+    },
+    "SEOTags": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable-components.seot-ags"
     }
   }
 }
